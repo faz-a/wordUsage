@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>word usage...</title>
+    </head>
+    <body>
+    	<p>This doesn't have much error handling/validation yet, so please make sure to:</p>
+    	<ul style="list-style-type:circle">
+    		<li>Enclose a term in quotation marks if it contains multiple words</li>
+    		<li>Enter the month in MM format and the year in YYYY format</li>
+    		<li>Search for a date range between 12/2005 and the current month</li>
+		</ul>
+   		<form method="POST" class="post-form">{% csrf_token %}
+        	{{ form.as_p }}
+        	<button type="submit">Search</button>
+    	</form>
+    </body>
+</html>
